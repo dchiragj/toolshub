@@ -1,11 +1,11 @@
 import React from "react";
-import { otherFeaturedTools, otherOtherTools } from "./HeaderHelper";
+import { otherFeaturedTools, otherOtherTools } from "../Helpers/HeaderHelper";
 import { NavLink } from "react-router-dom";
 
 const OtherMenu = () => {
   return (
     <>
-      <div className="absolute bg-white dark:bg-darkBlue top-[55px] right-[25%] shadow-2xl w-[700px] justify-center hidden group-hover:flex rounded-md">
+      <div className="absolute z-[1000] bg-white dark:bg-darkBlue top-[55px] right-[25%] shadow-2xl w-[700px] justify-center hidden group-hover:flex rounded-md">
         <div className="w-[40%] flex flex-col border-r-[1px] border-r-gray200 px-3 pb-3">
           <p className="uppercase text-xs font-bold text-gray400 mt-4 mb-2">
             Featured Tools

@@ -1,11 +1,11 @@
 import React from "react";
-import { fileTools } from "./HeaderHelper";
+import { fileTools } from "../Helpers/HeaderHelper";
 import { NavLink } from "react-router-dom";
 
 const FileMenu = () => {
   return (
     <>
-      <div className="absolute bg-white dark:bg-darkBlue top-[55px] right-[25%] shadow-2xl w-[750px] justify-center hidden group-hover:flex rounded-md">
+      <div className="absolute z-[1000] bg-white dark:bg-darkBlue top-[55px] right-[25%] shadow-2xl w-[750px] justify-center hidden group-hover:flex rounded-md">
         <div className="w-full flex flex-col px-3">
           <p className="uppercase text-xs font-bold text-gray400 mt-4 mb-2">
             File Tools

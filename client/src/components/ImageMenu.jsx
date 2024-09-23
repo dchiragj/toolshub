@@ -5,13 +5,13 @@ import {
   AIImageTools1,
   featuredTools,
   otherImageTools,
-} from "./HeaderHelper";
+} from "../Helpers/HeaderHelper";
 import { FaArrowRight } from "react-icons/fa6";
 
 const ImageMenu = () => {
   return (
     <>
-      <div className="absolute bg-white dark:bg-darkBlue top-[55px] left-0 w-full shadow-2xl hidden justify-center group-hover:flex px-0 md:px-25 lg:px-36 xl:px-56 rounded-lg">
+      <div className="absolute z-[1000] bg-white dark:bg-darkBlue top-[55px] left-0 w-full shadow-2xl hidden justify-center group-hover:flex px-0 md:px-25 lg:px-36 xl:px-56 rounded-lg">
         {/* <div className="w-full flex"> */}
         <div className="w-[25%] flex flex-col border-r-[1px] border-r-gray200 px-3">
           <div className="py-3">

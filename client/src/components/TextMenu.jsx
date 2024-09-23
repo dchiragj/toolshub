@@ -1,12 +1,12 @@
 import React from "react";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import { otherTextTools, textFeaturedTools } from "./HeaderHelper";
+import { otherTextTools, textFeaturedTools } from "../Helpers/HeaderHelper";
 
 const TextMenu = () => {
   return (
     <>
-      <div className="absolute bg-white dark:bg-darkBlue top-[55px] right-[25%] shadow-2xl w-[700px] justify-center hidden group-hover:flex rounded-lg">
+      <div className="absolute z-[1000] bg-white dark:bg-darkBlue top-[55px] right-[25%] shadow-2xl w-[700px] justify-center hidden group-hover:flex rounded-lg">
         <div className="w-[35%] flex flex-col border-r-[1px] border-r-gray200 px-2">
           <p className="uppercase text-xs font-bold text-gray400 mt-4 mb-2">
             Featured Tools

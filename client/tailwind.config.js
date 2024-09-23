@@ -3,7 +3,11 @@ module.exports = {
   content: ["./src/components/*.{html,js,jsx}", "./src/pages/*.{html,js,jsx}"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'custom': '0px 0px 16px rgba(17, 17, 26, 0.1)', // Custom shadow
+      },
+    },
     colors: {
       'black': "black",
       'white': "white",

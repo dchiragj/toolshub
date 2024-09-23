@@ -12,13 +12,15 @@ import OtherMenu from "./OtherMenu";
 import FileMenu from "./FileMenu";
 import { useAuth } from "../Context/AllContext";
 import Sidebar from "./Sidebar";
-import LanguageSelector from "./LanguageSelector";
+import LanguageSelector from "../LanguageSelector";
+import { useTranslation } from 'react-i18next';
 
 const Header = ({ expandSidebar, setExpandSidebar }) => {
   const { darkMode, darkModeHandler } = useAuth();
+  const { t } = useTranslation();
   return (
     <>
-      <div className="p-4 shadow-md h-[72px] dark:bg-darkBlue relative">
+      <div className="p-4 shadow-lg h-[72px] bg-white dark:bg-darkBlue w-full fixed top-0 left-0 z-[2000]">
         <div className="flex justify-between item-center">
           <div className="flex items-center gap-4">
             <div onClick={() => setExpandSidebar(!expandSidebar)}>
@@ -29,32 +31,32 @@ const Header = ({ expandSidebar, setExpandSidebar }) => {
               />
             </div>
             <NavLink to={"/"} className="text-3xl font-bold">
-              Logo
+              LOGO
             </NavLink>
           </div>
           <nav className="gap-8 text-lg hidden lg:flex dark:text-white">
             <li className="relative flex items-center gap-2 rounded-lg px-2 hover:bg-[aliceblue] dark:hover:bg-[#1a252e] delay-150 group cursor-pointer">
-              <p className="hover:text-lightBlue">PDF</p>
+              <p className="hover:text-lightBlue">{t('pdf')}</p>
               <IoIosArrowDown className="text-gray500" />
               <PDFMenu />
             </li>
             <li className="flex items-center gap-2 rounded-lg px-2 hover:bg-[aliceblue] dark:hover:bg-[#1a252e] delay-150 group cursor-pointer hover:text">
-              <p className="hover:text-lightBlue">Image</p>
+              <p className="hover:text-lightBlue">{t('image')}</p>
               <IoIosArrowDown className="text-gray500" />
               <ImageMenu />
             </li>
             <li className="flex items-center gap-2 rounded-lg px-2 hover:bg-[aliceblue] dark:hover:bg-[#1a252e] delay-150 group cursor-pointer">
-              <p className="hover:text-lightBlue">Text</p>
+              <p className="hover:text-lightBlue">{t('text')}</p>
               <IoIosArrowDown className="text-gray500" />
               <TextMenu />
             </li>
             <li className="flex items-center gap-2 rounded-lg px-2 hover:bg-[aliceblue] dark:hover:bg-[#1a252e] delay-150 group cursor-pointer">
-              <p className="hover:text-lightBlue">Others</p>
+              <p className="hover:text-lightBlue">{t('other')}</p>
               <IoIosArrowDown className="text-gray500" />
               <OtherMenu />
             </li>
             <li className="flex items-center gap-2 rounded-lg px-2 hover:bg-[aliceblue] dark:hover:bg-[#1a252e] delay-150 group cursor-pointer">
-              <p className="hover:text-lightBlue">File</p>
+              <p className="hover:text-lightBlue">{t('file')}</p>
               <IoIosArrowDown className="text-gray500" />
               <FileMenu />
             </li>

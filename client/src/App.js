@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [expandSidebar, setExpandSidebar] = useState(false);
@@ -11,6 +12,9 @@ function App() {
         expandSidebar={expandSidebar}
         setExpandSidebar={setExpandSidebar}
       />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }

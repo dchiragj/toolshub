@@ -1,12 +1,12 @@
 import React from "react";
-import { pdfFeatured, popularPdfTools } from "./HeaderHelper";
+import { pdfFeatured, popularPdfTools } from "../Helpers/HeaderHelper";
 import { NavLink } from "react-router-dom";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 const PDFMenu = () => {
   return (
     <>
-      <div className="absolute bg-white dark:bg-darkBlue top-[38px] -left-7 shadow-2xl w-[750px] justify-center hidden group-hover:flex rounded-md">
+      <div className="absolute z-[1000] bg-white dark:bg-darkBlue top-[38px] -left-7 shadow-2xl w-[750px] justify-center hidden group-hover:flex rounded-md">
         <div className="w-[35%] flex flex-col border-r-[1px] border-r-gray200 px-3">
           <p className="uppercase text-xs font-bold text-gray400 mt-4 mb-2">
             Featured Tools

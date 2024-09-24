@@ -4276,7 +4276,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
     }, [clicked])
 
     return (
-        tools?.map((val, ind) => {
+        tools?.slice(0,4).map((val, ind) => {
             return (
                 <NavLink key={ind} to={val.link} className={`bg-white dark:bg-[#1a252e] flex flex-col p-5 rounded-xl group`}>
                     <div className='flex gap-2 mb-2'>

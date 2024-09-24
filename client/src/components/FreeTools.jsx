@@ -23,42 +23,42 @@ const FreeTools = () => {
             description: "Merge multiple pdf documents together free",
             icon: <BsFileEarmarkPdfFill fontSize={80} color='rgb(17, 146, 26)' />,
             backgroundColor: "#e2e3fe",
-            link: "/crop-pdf"
+            link: "/merge-pdf"
         },
         {
             title: "Compress PDF",
             description: "Compress pdf document online for free",
             icon: <BsFileEarmarkPdfFill fontSize={80} color='rgb(55, 18, 191)' />,
             backgroundColor: "#fae2fe",
-            link: "/crop-pdf"
+            link: "/compress-pdf"
         },
         {
             title: "PDF Editor",
             description: "Edit an existing PDF and download with no sign-up",
             icon: <BsFileEarmarkPdfFill fontSize={80} color='rgb(53, 62, 65)' />,
             backgroundColor: "#e2edfe",
-            link: "/crop-pdf"
+            link: "/edit-pdf"
         },
         {
             title: "Profile Photo Maker",
             description: "Style your profile photo for social media",
             icon: <CgProfile fontSize={80} color='rgb(247, 2, 39)' />,
             backgroundColor: "#e1fde5",
-            link: "/crop-pdf"
+            link: "/profile-photo-maker"
         },
         {
             title: "Image Resizer",
             description: "Resize an image with our ai technology",
             icon: <GrGallery fontSize={80} color='rgb(25, 143, 88)' />,
             backgroundColor: "#e2fefc",
-            link: "/crop-pdf"
+            link: "/image-resizer"
         },
         {
             title: "PNG Converter",
             description: "Convert any image format to PNG online free",
             icon: <GrGallery fontSize={80} color='rgb(25, 143, 88)' />,
             backgroundColor: "#FEE2E2",
-            link: "/crop-pdf"
+            link: "/png-converter"
         },
     ]
 

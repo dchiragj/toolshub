@@ -30,7 +30,7 @@ const Header = ({ expandSidebar, setExpandSidebar }) => {
                 cursor={"pointer"}
               />
             </div>
-            <NavLink to={"/"} className="text-3xl font-bold">
+            <NavLink to={"/"} className="text-3xl font-bold dark:text-white">
               LOGO
             </NavLink>
           </div>

@@ -9,7 +9,7 @@ const HomeHeadingSlider = () => {
         <>
             <Swiper
                 direction='vertical'
-                className='mySwiper'
+                className='swiper1'
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false

@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/components/*.{html,js,jsx}", "./src/pages/*.{html,js,jsx}"],
+  content: [
+    "./src/components/*.{html,js,jsx}",
+    "./src/pages/*.{html,js,jsx}",
+    "./src/Helpers/*.{html,js,jsx}",
+    "./src/*.{html,js,jsx}"
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -18,6 +23,7 @@ module.exports = {
       "gray400": "#9ca3af",
       "gray500": "#6b7280",
       "gray600": "#6b7280",
+      "purple": "#6f56ec"
     },
   },
   plugins: [],

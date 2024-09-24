@@ -8,6 +8,7 @@ import { MdOutlineVideoLibrary, MdOutlineMarkUnreadChatAlt } from "react-icons/m
 import { FaArrowRight } from "react-icons/fa6";
 import { RiTokenSwapFill } from "react-icons/ri";
 import PopularTools from '../components/PopularTools';
+import FreeTools from '../components/FreeTools';
 
 const Home = () => {
 
@@ -78,10 +79,10 @@ const Home = () => {
         <div className='dark:bg-darkBlue pb-10 mt-[72px]'>
             <CommonPageHeader text={"Free Online Web Tools For Everyone. No Sign-Up Required. No Limits."} />
             <div className='dark:bg-darkBlue dark:text-white p-5 px-2'>
-                <div className='flex flex-wrap justify-center items-center gap-3 text-5xl font-bold text-center mb-8'><span>Free Tools to Make</span> <HomeHeadingSlider /> <span>Simple</span></div>
+                <div className='flex flex-wrap justify-center items-center gap-3 text-4xl sm:text-5xl font-bold text-center mb-8'><span>Free Tools to Make</span> <HomeHeadingSlider /> <span>Simple</span></div>
                 <div className='text-xl text-[#707375] m-1.5 text-center flex items-center justify-center'>We offer PDF, file, image and other online tools to make your life easier</div>
             </div>
-            <div className='dark:bg-white bg-blue-500 rounded-xl shadow-custom grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-5 sm:m-10  p-10 px-10 sm:px-12 xl:px-20'>
+            <div className=' bg-blue-500 rounded-xl shadow-custom grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-5 sm:m-10  p-10 px-10 sm:px-12 xl:px-20'>
                 {
                     FeaturedCard.map((val, ind) => {
                         return (
@@ -103,7 +104,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </NavLink>
-                                <div className='p-5 py-3 dark:border-darkBlue dark:bg-darkBlue border-[1px] border-t-0 rounded-b-xl border-gray200 text-xs'>
+                                <div className='p-5 py-3 dark:border-gray400 dark:bg-darkBlue border-[1px] border-t-0 rounded-b-xl border-gray200 text-xs'>
                                     <div className='flex justify-between items-center p-5 py-3 rounded-lg' style={{ backgroundColor: val.bottomBgColor }}>
                                         <p>Other Featured : </p>
                                         <NavLink to={val.otherLink} className="text-lightBlue text-xs font-medium px-2 rounded-full hover:underline decoration-lightBlue">{val.otherText}</NavLink>
@@ -115,6 +116,7 @@ const Home = () => {
                 }
             </div>
             <PopularTools/>
+            <FreeTools/>
         </div>
     )
 }

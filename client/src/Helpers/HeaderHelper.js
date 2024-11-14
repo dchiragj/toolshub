@@ -19,7 +19,7 @@ export const pdfFeatured = [
     desc2: "Online Tool",
   },
   {
-    link: "/merge-pdf",
+    link: "/merge-pdfs",
     backGround: "#e2f0fe",
     color: "#3d99f5",
     title: "PDF Merger",
@@ -64,10 +64,6 @@ export const popularPdfTools = [
   {
     link: "/pdf-to-png",
     title: "PDF to PNG",
-  },
-  {
-    link: "/pdf-to-psd",
-    title: "PDF to PSD",
   },
   {
     link: "/pdf-to-word",
@@ -122,15 +118,11 @@ export const popularPdfTools = [
     title: "Rotate PDF",
   },
   {
-    link: "/psd-to-pdf",
-    title: "PSD to PDF",
-  },
-  {
     link: "/png-to-pdf",
     title: "PNG to PDF",
   },
   {
-    link: "png-to-gray-pdf",
+    link: "/png-to-graypdf",
     title: "PNG to Gray PDF",
   },
 ];
@@ -258,7 +250,7 @@ export const textFeaturedTools = [
     desc: "Easily convert text case",
   },
   {
-    link: "/emoji-remover",
+    link: "/remove-emojis",
     backGround: "#e3fcfd",
     color: "#10d0d5",
     title: "Emoji Remover",
@@ -272,7 +264,7 @@ export const otherTextTools = [
     title: "Password Generator",
   },
   {
-    link: "/hash-generator",
+    link: "/sha-hashes",
     title: "Hash Generator",
   },
   {
@@ -380,7 +372,7 @@ export const fileTools = [
     desc: "Convert csv to excel online",
   },
   {
-    link: "/csv-to-html-table",
+    link: "/csv-to-excel",
     icon: <IoDocumentOutline color="#e24841" />,
     backGround: "#fbe6e5",
     title: "CSV to Excel",
@@ -401,14 +393,14 @@ export const fileTools = [
     desc: "Convert csv to sql online",
   },
   {
-    link: "/csv-to-tsv",
+    link: "/csv-to-html",
     icon: <IoDocumentOutline color="#10d0d5" />,
     backGround: "#e3fcfd",
     title: "CSV to HTML",
     desc: "Convert csv to html online",
   },
   {
-    link: "/csv-to-word1",
+    link: "/csv-to-word",
     icon: <IoDocumentOutline color="#3d99f5" />,
     backGround: "#e2f0fe",
     title: "CSV to Word",

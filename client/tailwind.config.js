@@ -4,7 +4,8 @@ module.exports = {
     "./src/components/*.{html,js,jsx}",
     "./src/pages/*.{html,js,jsx}",
     "./src/Helpers/*.{html,js,jsx}",
-    "./src/*.{html,js,jsx}"
+    "./src/*.{html,js,jsx}",
+    "./src/pages/*/*.{html,js,jsx}"
   ],
   darkMode: "class",
   theme: {

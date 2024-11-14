@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import { useAuth } from '../Context/AllContext'
 import { GrGallery } from 'react-icons/gr';
 import { FaFileAlt } from 'react-icons/fa';
 import { IoIosSettings } from 'react-icons/io';
 import { BsQrCode } from "react-icons/bs";
 import { IoDocumentTextOutline, IoBarChartOutline } from 'react-icons/io5'
 import { FaCalendarAlt, FaMoneyBillAlt } from "react-icons/fa"
-import { FaVideo, FaHashtag, FaKey, FaGlobe, FaChartLine, FaChartPie, FaFacebook, FaFilePdf, FaPinterest, FaReddit, FaYoutube, FaArrowRight, FaTwitter, FaLinkedin, FaTiktok, FaInstagram, FaSpotify, FaFileVideo, FaImage, FaCamera, FaMicrophone, FaCalendar } from "react-icons/fa6";
-import { HiOutlineSpeakerWave } from "react-icons/hi2";
+import { FaVideo, FaHashtag, FaKey, FaGlobe, FaChartLine, FaChartPie, FaFacebook, FaFilePdf, FaPinterest, FaYoutube, FaArrowRight, FaTwitter, FaLinkedin, FaTiktok, FaInstagram, FaSpotify, FaFileVideo, FaImage, FaCamera, FaMicrophone, FaCalendar } from "react-icons/fa6";
 
 const PopularToolsHelper = ({ clicked = 1 }) => {
-    const { darkMode } = useAuth();
 
     const pdfTools = [
         {
@@ -28,15 +25,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
             backgroundColor: "#fbe6e5",
             link: "/bmp-to-pdf",
             title: "BMP",
-            title1: "PDF",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
-            link: "/eps-to-pdf",
-            title: "EPS",
             title1: "PDF",
             desc: "PDF Tools",
             description: "Easily convert, organize, edit, sign and compress your pdfs"
@@ -107,15 +95,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/psd-to-pdf",
-            title: "PSD",
-            title1: "PDF",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
             link: "/raw-to-pdf",
             title: "RAW",
             title1: "PDF",
@@ -179,18 +158,9 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/csv-to-plain-pdf",
-            title: "CSV",
-            title1: "Plain PDF",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
             link: "/excel-to-plain-pdf",
-            title: "GIF",
-            title1: "PDF",
+            title: "Excel",
+            title1: "Plain PDF",
             desc: "PDF Tools",
             description: "Easily convert, organize, edit, sign and compress your pdfs"
         },
@@ -217,15 +187,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
             backgroundColor: "#fbe6e5",
             link: "/md-to-pdf",
             title: "MD",
-            title1: "PDF",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
-            link: "/speech-to-pdf",
-            title: "GIF",
             title1: "PDF",
             desc: "PDF Tools",
             description: "Easily convert, organize, edit, sign and compress your pdfs"
@@ -314,15 +275,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/pdf-to-gray-png",
-            title: "pdf",
-            title1: "gray png",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
             link: "/pdf-to-heic",
             title: "pdf",
             title1: "heic",
@@ -362,15 +314,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
             link: "/pdf-to-png",
             title: "pdf",
             title1: "png",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
-            link: "/pdf-to-psd",
-            title: "pdf",
-            title1: "psd",
             desc: "PDF Tools",
             description: "Easily convert, organize, edit, sign and compress your pdfs"
         },
@@ -467,7 +410,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/pdf-to-webp",
+            link: "/pdf-to-text",
             title: "pdf",
             title1: "text",
             desc: "PDF Tools",
@@ -539,15 +482,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/merge-pdf-text",
-            title: "merge pdf & text",
-            title1: "",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
             link: "/merge-pdfs",
             title: "merge pdfs",
             title1: "",
@@ -593,15 +527,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/split-pdf",
-            title: "split pdf",
-            title1: "",
-            desc: "PDF Tools",
-            description: "Easily convert, organize, edit, sign and compress your pdfs"
-        },
-        {
-            icon: <FaFilePdf color='#e24841' fontSize={26} />,
-            backgroundColor: "#fbe6e5",
             link: "/rotate-pdf-pages",
             title: "rotate pdf pages",
             title1: "",
@@ -611,7 +536,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/organize-pdf-text",
+            link: "/organize-pdf",
             title: "organize pdf",
             title1: "",
             desc: "PDF Tools",
@@ -620,7 +545,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFilePdf color='#e24841' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/crop-pdfs",
+            link: "/crop-pdf",
             title: "crop pdfs",
             title1: "",
             desc: "PDF Tools",
@@ -911,9 +836,9 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <GrGallery color='#ff7919' fontSize={26} />,
             backgroundColor: "#ffede0",
-            link: "/image-to-lco",
+            link: "/image-to-ico",
             title: "image",
-            title1: "LCO",
+            title1: "ICO",
             desc: "IMAGE Tools",
             description: "Easily convert, organize, edit, sign and compress your pdfs"
         },
@@ -1199,33 +1124,33 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
     ]
 
     const video = [
-        {
-            icon: <HiOutlineSpeakerWave color='#FF0000' fontSize={26} />,
-            backgroundColor: "#f9ecef",
-            link: "/soundcloud-to-mp3",
-            title: "Soundcloud to MP3",
-            title1: "",
-            desc: "Downloader",
-            description: "Download Soundcloud to MP3 with our pinterest downloader."
-        },
-        {
-            icon: <FaPinterest color='#bd081c' fontSize={26} />,
-            backgroundColor: "#fff5f6",
-            link: "/pinterest-video-downloader",
-            title: "Pinterest Video Downloader",
-            title1: "",
-            desc: "Downloader",
-            description: "Download pinterest videos in HD with our pinterest downloader."
-        },
-        {
-            icon: <FaReddit color='#FF4500' fontSize={26} />,
-            backgroundColor: "#fdf4e8",
-            link: "/reddit-video-downloader",
-            title: "Reddit Video Downloader",
-            title1: "",
-            desc: "Downloader",
-            description: "Download reddit videos in HD with our pinterest downloader."
-        },
+        // {
+        //     icon: <HiOutlineSpeakerWave color='#FF0000' fontSize={26} />,
+        //     backgroundColor: "#f9ecef",
+        //     link: "/soundcloud-to-mp3",
+        //     title: "Soundcloud to MP3",
+        //     title1: "",
+        //     desc: "Downloader",
+        //     description: "Download Soundcloud to MP3 with our pinterest downloader."
+        // },
+        // {
+        //     icon: <FaPinterest color='#bd081c' fontSize={26} />,
+        //     backgroundColor: "#fff5f6",
+        //     link: "/pinterest-video-downloader",
+        //     title: "Pinterest Video Downloader",
+        //     title1: "",
+        //     desc: "Downloader",
+        //     description: "Download pinterest videos in HD with our pinterest downloader."
+        // },
+        // {
+        //     icon: <FaReddit color='#FF4500' fontSize={26} />,
+        //     backgroundColor: "#fdf4e8",
+        //     link: "/reddit-video-downloader",
+        //     title: "Reddit Video Downloader",
+        //     title1: "",
+        //     desc: "Downloader",
+        //     description: "Download reddit videos in HD with our pinterest downloader."
+        // },
         {
             icon: <FaFacebook color='#1877F2' fontSize={26} />,
             backgroundColor: "aliceblue",
@@ -1319,7 +1244,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaYoutube color='#FF0000' fontSize={26} />,
             backgroundColor: "#e7f1ff",
-            link: "/youtube-thumbnail-downloader",
+            link: "/yt-thumbnail",
             title: "YT Thumbnail Downloader",
             title1: "",
             desc: "Downloader",
@@ -1364,7 +1289,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFileVideo color='#FF0000' fontSize={26} />,
             backgroundColor: "#fbe6e5",
-            link: "/webm-video-maker",
+            link: "/webm-video",
             title: "WEBM Video Maker",
             title1: "",
             desc: "Video Tools",
@@ -1391,7 +1316,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaCamera color='#FF0000' fontSize={26} />,
             backgroundColor: "#ffeef2",
-            link: "/web-screenshot-generator",
+            link: "/web-screenshot",
             title: "Web Screenshot Generator",
             title1: "",
             desc: "Generator",
@@ -1647,15 +1572,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFileAlt color='#624bd8' fontSize={26} />,
             backgroundColor: "#e9e6f9",
-            link: "/doc-to-rft",
-            title: "doc to rft",
-            title1: "",
-            desc: "Document Tools",
-            description: "Convert xlx,xlsx,doc,docx,pptx,rft,csv and more online"
-        },
-        {
-            icon: <FaFileAlt color='#624bd8' fontSize={26} />,
-            backgroundColor: "#e9e6f9",
             link: "/text-to-excel",
             title: "text to excel",
             title1: "",
@@ -1746,15 +1662,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <FaFileAlt color='#624bd8' fontSize={26} />,
             backgroundColor: "#e9e6f9",
-            link: "/scss-to-css",
-            title: "scss to css",
-            title1: "",
-            desc: "Document Tools",
-            description: "Convert xlx,xlsx,doc,docx,pptx,rft,csv and more online"
-        },
-        {
-            icon: <FaFileAlt color='#624bd8' fontSize={26} />,
-            backgroundColor: "#e9e6f9",
             link: "/md-to-word",
             title: "md to word",
             title1: "",
@@ -1819,6 +1726,14 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         }, {
             icon: <IoBarChartOutline color='black' fontSize={26} />,
             backgroundColor: "aliceblue",
+            link: "/find-my-ip",
+            title: "find my ip",
+            title1: "",
+            desc: "Web Tools",
+            description: "Analyze website, make backlinks, generate sitemap."
+        }, {
+            icon: <IoBarChartOutline color='black' fontSize={26} />,
+            backgroundColor: "aliceblue",
             link: "/hex-to-ip",
             title: "hex to ip",
             title1: "",
@@ -1827,8 +1742,8 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         }, {
             icon: <IoBarChartOutline color='black' fontSize={26} />,
             backgroundColor: "aliceblue",
-            link: "/hoostname-to-ip",
-            title: "hoostname to ip",
+            link: "/hostname-to-ip",
+            title: "hostname to ip",
             title1: "",
             desc: "Web Tools",
             description: "Analyze website, make backlinks, generate sitemap."
@@ -1837,14 +1752,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
             backgroundColor: "aliceblue",
             link: "/htaccess-redirect",
             title: "htaccess redirect",
-            title1: "",
-            desc: "Web Tools",
-            description: "Analyze website, make backlinks, generate sitemap."
-        }, {
-            icon: <IoBarChartOutline color='black' fontSize={26} />,
-            backgroundColor: "aliceblue",
-            link: "/http-headers",
-            title: "http headers",
             title1: "",
             desc: "Web Tools",
             description: "Analyze website, make backlinks, generate sitemap."
@@ -2288,7 +2195,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <IoIosSettings color='#000' fontSize={26} />,
             backgroundColor: "#e9e6f9",
-            link: "/bbcode to text",
+            link: "/bbcode-to-text",
             title: "bbcode to text",
             title1: "",
             desc: "text",
@@ -2378,8 +2285,8 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <IoIosSettings color='#000' fontSize={26} />,
             backgroundColor: "#e9e6f9",
-            link: "/sha-hshes",
-            title: "sha hshes",
+            link: "/sha-hashes",
+            title: "sha hashes",
             title1: "",
             desc: "text",
             description: "Binary Converter Text Explore our more latest free online web tools collection."
@@ -4241,24 +4148,6 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
         {
             icon: <BsQrCode color='#000' fontSize={26} />,
             backgroundColor: "bisque",
-            link: "/halftone-qr-code",
-            title: "halftone qr code",
-            title1: "",
-            desc: "Text",
-            description: "Drop an image into your browser, then click generate."
-        },
-        {
-            icon: <BsQrCode color='#000' fontSize={26} />,
-            backgroundColor: "bisque",
-            link: "/premium-barcode",
-            title: "Premium Barcode",
-            title1: "",
-            desc: "Text",
-            description: "SVG/PNG Premium Barcode generator online for free."
-        },
-        {
-            icon: <BsQrCode color='#000' fontSize={26} />,
-            backgroundColor: "bisque",
             link: "/barcode-qrcode-scanner",
             title: "Barcode Qr Code Scanner",
             title1: "",
@@ -4276,7 +4165,7 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
     }, [clicked])
 
     return (
-        tools?.slice(0,4).map((val, ind) => {
+        tools?.map((val, ind) => {
             return (
                 <NavLink key={ind} to={val.link} className={`bg-white dark:bg-[#1a252e] flex flex-col p-5 rounded-xl group`}>
                     <div className='flex gap-2 mb-2'>

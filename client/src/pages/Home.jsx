@@ -9,8 +9,12 @@ import { FaArrowRight } from "react-icons/fa6";
 import { RiTokenSwapFill } from "react-icons/ri";
 import PopularTools from '../components/PopularTools';
 import FreeTools from '../components/FreeTools';
+import Ads from '../components/Ads';
+import WebTools from '../components/WebTools';
 
 const Home = () => {
+
+    const isAdServe = JSON.parse(process.env.REACT_APP_PUBLIC_SERVE_ADS);
 
     const FeaturedCard = [
         {
@@ -76,8 +80,9 @@ const Home = () => {
     ]
 
     return (
-        <div className='dark:bg-darkBlue pb-10 mt-[72px]'>
+        <div className='dark:bg-darkBlue mt-[72px]'>
             <CommonPageHeader text={"Free Online Web Tools For Everyone. No Sign-Up Required. No Limits."} />
+            {isAdServe && <Ads slot='' className="mx-10 mt-5" />}
             <div className='dark:bg-darkBlue dark:text-white p-5 px-2'>
                 <div className='flex flex-wrap justify-center items-center gap-3 text-4xl sm:text-5xl font-bold text-center mb-8'><span>Free Tools to Make</span> <HomeHeadingSlider /> <span>Simple</span></div>
                 <div className='text-xl text-[#707375] m-1.5 text-center flex items-center justify-center'>We offer PDF, file, image and other online tools to make your life easier</div>
@@ -115,8 +120,11 @@ const Home = () => {
                     })
                 }
             </div>
-            <PopularTools/>
-            <FreeTools/>
+            {isAdServe && <Ads slot='' className={'mx-10'} />}
+            <PopularTools />
+            {isAdServe && <Ads slot='' className={'mx-10'} />}
+            <FreeTools />
+            <WebTools />
         </div>
     )
 }

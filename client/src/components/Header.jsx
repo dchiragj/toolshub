@@ -16,8 +16,28 @@ import LanguageSelector from "../LanguageSelector";
 import { useTranslation } from 'react-i18next';
 
 const Header = ({ expandSidebar, setExpandSidebar }) => {
+
   const { darkMode, darkModeHandler } = useAuth();
   const { t } = useTranslation();
+
+  const shareHandle = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Check this out!',
+          text: 'This is an awesome tools converter site, I want to share with you.',
+          url: window.location.href,
+        });
+        console.log('Share was successful.');
+      } catch (error) {
+        console.error('Error sharing:', error);
+      }
+    } else {
+      console.error('Web Share API is not supported in this browser.');
+      // Fallback logic here (e.g., copying the link to clipboard)
+    }
+  }
+
   return (
     <>
       <div className="p-4 shadow-lg h-[72px] bg-white dark:bg-darkBlue w-full fixed top-0 left-0 z-[2000]">
@@ -66,6 +86,7 @@ const Header = ({ expandSidebar, setExpandSidebar }) => {
               <div
                 className="p-2 rounded-full shadow-2xl border-[1px] border-gray400 cursor-pointer bg-transparent dark:text-white hover:bg-yellow-200 hover:border-yellow-200"
                 onClick={darkModeHandler}
+                title="Toggle Light/Dark Mode"
               >
                 {darkMode ? (
                   <MdOutlineLightMode fontSize={20} />
@@ -73,12 +94,12 @@ const Header = ({ expandSidebar, setExpandSidebar }) => {
                   <IoMoonOutline fontSize={20} />
                 )}
               </div>
-              <div className="p-2 rounded-full shadow-2xl border-[1px] border-gray400 cursor-pointer bg-transparent dark:text-white hover:bg-yellow-200 hover:border-yellow-200">
+              <div className="p-2 rounded-full shadow-2xl border-[1px] border-gray400 cursor-pointer bg-transparent dark:text-white hover:bg-yellow-200 hover:border-yellow-200" onClick={shareHandle} title="Share">
                 <GoShareAndroid fontSize={20} />
               </div>
             </div>
             <div className="pl-3 hidden md:flex">
-              <LanguageSelector/>
+              <LanguageSelector />
             </div>
             <Sidebar
               expandSidebar={expandSidebar}

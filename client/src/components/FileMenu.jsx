@@ -19,7 +19,7 @@ const FileMenu = () => {
                   to={val.link}
                 >
                   <div
-                    className="p-4 rounded-xl"
+                    className={`p-4 rounded-xl`}
                     style={{ backgroundColor: val.backGround }}
                   >
                     {val.icon}

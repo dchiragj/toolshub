@@ -10,8 +10,6 @@ export const AuthProvider = ({ children }) => {
     document.body.classList.toggle("dark")
   };
 
-  console.log("Dark : ",darkMode);
-
   const providerValue = {
     darkMode,
     darkModeHandler,

@@ -80,7 +80,7 @@ const PopularTools = () => {
           {
             buttons.map((val, ind) => {
               return (
-                <Button key={ind} startIcon={val.icon} variant={tabs === val.tabs ? 'contained' : ""} sx={{ borderRadius: "25px", color: darkMode ? "white" : '' }} onClick={() => handleChange(val.tabs)}>{val.text}</Button>
+                <Button key={ind} startIcon={val.icon} variant={tabs === val.tabs ? 'contained' : ""} sx={{ borderRadius: "25px" }} onClick={() => handleChange(val.tabs)} className='dark:text-white'>{val.text}</Button>
               )
             })
           }

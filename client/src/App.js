@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
+import Routing from "./components/Routing";
+import BottomToTop from "./components/BottomToTop";
+import Footer from "./components/Footer";
 
 function App() {
   const [expandSidebar, setExpandSidebar] = useState(false);
@@ -13,8 +15,16 @@ function App() {
         setExpandSidebar={setExpandSidebar}
       />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {
+          Routing.map((val, ind) => {
+            return (
+              <Route key={ind} path={val.path} element={val.element} />
+            )
+          })
+        }
       </Routes>
+      <BottomToTop />
+      <Footer />
     </>
   );
 }

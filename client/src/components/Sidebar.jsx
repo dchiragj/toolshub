@@ -11,7 +11,7 @@ import LanguageSelector from "../LanguageSelector";
 
 const Sidebar = ({ expandSidebar, setExpandSidebar }) => {
 
-  const [expanded, setExpanded] = React.useState('panel1');
+  const [expanded, setExpanded] = React.useState();
   const {darkMode} = useAuth();
 
   const handleChange = (panel) => (event, newExpanded) => {

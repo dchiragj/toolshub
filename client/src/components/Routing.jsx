@@ -45,6 +45,18 @@ import PdfPageRotate from "../pages/PDF/PdfPageRotate";
 import PdfParts from "../pages/PDF/PdfParts";
 import PdfPageNumberAdd from "../pages/PDF/PdfPageNumberAdd";
 import OrganizePdf from "../pages/PDF/OrganizePdf";
+import AiToolsBgChangerPage from "./AiToolsBgChangerPage";
+import AiImageEditer from "./AiImageEditer";
+import AiTexttoImagePage from "./AiTexttoImagePage";
+import AiImageFaceSwap from "./AiImageFaceSwap";
+import BiographyTitle from "./BiographyTitle";
+import Questiongenrated from "./Questiongenrated";
+import Threepartpdf from "./Threepartpdf";
+import PdfBgColor from "./PdfBgColor";
+import OrganizeBulkPdf from "./OrganizeBulkPdf";
+import Signeditpdf from "./Signeditpdf";
+import Extactemailspdf from "./Extactemailspdf";
+import Extectlinkpdfs from "./Extectlinkpdfs";
 
 const Routing = [
     {
@@ -604,6 +616,54 @@ const Routing = [
         path: '/sha-hashes',
         element: <TextTools title='Hashes Generator' title1='Easily convert text to hashes online for free.' />
     },
+    {
+        path: '/ai-image-background-editor',
+        element: <AiToolsBgChangerPage title='Image Background Color Changer' title1='Easily change image background colors for free.' />
+    },
+    {
+        path: '/ai-image-editor',
+        element: <AiImageEditer title='AI Image Editor' title1='Easily enhance, edit, upscale images online for free.' />
+    },
+    {
+        path: '/text-to-image',
+        element: <AiTexttoImagePage title='AI Text to Image' title1='Easily enhance, edit, upscale images online for free.' />
+    },
+    {
+        path: '/image-face-swap',
+        element: <AiImageFaceSwap title='AI Face Swap' title1='Easily swap faces from images online for free.' />
+    },
+    {
+        path: '/biography-title',
+        element: <BiographyTitle title='Biography Title Writer' title1='Easily write quality content with AI online for free.' />
+    },
+    {
+        path:'/questions-generator',
+        element: <Questiongenrated title='Questions Generator From Text' title1='Crafting comprehensive questions to provoke thought and enhance understanding.' />
+    },
+    {
+        path:'/3parts-pdf',
+        element: <Threepartpdf />
+    },
+    {
+        path:'/pdf-bg-color',
+        element: <PdfBgColor />
+    },
+    {
+        path:'/organize-bulk-pdf',
+        element: <OrganizeBulkPdf />
+    },
+    {
+        path:'/sign-edit-pdf',
+        element: <Signeditpdf />
+    },
+    {
+        path:"/extract-pdf-emails",
+        element: <Extactemailspdf/>
+    },
+    {
+        path:"/extract-pdf-links",
+        element: <Extectlinkpdfs/>
+    }
     // Popular tools routing end text
 ]
 

@@ -586,7 +586,7 @@ const TextTools = ({ title, title1 }) => {
                             </tbody>
                         </table>
                         <div className='flex justify-center items-center gap-5'>
-                            <CopyToClipboard text={wordAnalysis} onCopy={() => setCopyText(true)}>
+                            <CopyToClipboard text={JSON.stringify(wordAnalysis)} onCopy={() => setCopyText(true)}>
                                 <button className={`bg-lightBlue px-6 py-3 text-white rounded-lg`}>Copy</button>
                             </CopyToClipboard>
                             <button className={`bg-lightBlue px-6 py-3 text-white rounded-lg`} onClick={handleReset}>Reset</button>

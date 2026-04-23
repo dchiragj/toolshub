@@ -141,7 +141,7 @@ const PdfCropper = () => {
     };
 
     return (
-        <div className='mt-20'>
+        <div className="mt-[72px] dark:bg-darkBlue">
             <CommonPageHeader />
             <h1 className='text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold my-5 dark:text-white flex items-center justify-center'>PDF Cropper</h1>
             <p className='text-center text-gray500 my-5'>Easily crop PDF pages online for free</p>

@@ -38,7 +38,7 @@ const FileTypeConverter = ({ from, to }) => {
             reader.onload = (e) => {
                 fileContent = e.target.result;
                 let converted;
-                if (to === 'Html') {
+                if (to === 'HTML') {
                     converted = `<html><body>${fileContent}</body></html>`
                     setConvertedFile(converted)
                 } else if ((from === 'DOC' && to === 'Excel') || (from === 'Text' && to === 'Excel')) {

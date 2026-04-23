@@ -2294,15 +2294,15 @@ const PopularToolsHelper = ({ clicked = 1 }) => {
     ]
 
     const AiTools = [
-        {
-            icon: <IoDocumentTextOutline color='#10d0d5' fontSize={26} />,
-            backgroundColor: "#e3fcfd",
-            link: "/ai-image-art",
-            title: "AI Image Art",
-            title1: "",
-            desc: "AI Tools",
-            description: "Easily create an AI art from images with AI."
-        },
+        // {
+        //     icon: <IoDocumentTextOutline color='#10d0d5' fontSize={26} />,
+        //     backgroundColor: "#e3fcfd",
+        //     link: "/ai-image-art",
+        //     title: "AI Image Art",
+        //     title1: "",
+        //     desc: "AI Tools",
+        //     description: "Easily create an AI art from images with AI."
+        // },
         {
             icon: <IoDocumentTextOutline color='#10d0d5' fontSize={26} />,
             backgroundColor: "#e3fcfd",

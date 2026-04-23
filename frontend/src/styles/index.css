@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.shadow-custom {
+  box-shadow: 0px 0px 16px rgba(17, 17, 26, 0.1);
+}
+
+/* slider1 start */
+.swiper1 {
+  width: auto;
+  height: 60px;
+  margin-inline: 0;
+}
+
+.swiper1 .swiper-slide {
+  text-align: center;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper1 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* slider1 end */
+
+/* slider2 start */
+.swiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* slider2 end */
+
+th {
+  background-color: bisque;
+}
+
+thead th {
+  border: 2px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
